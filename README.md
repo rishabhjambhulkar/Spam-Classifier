@@ -20,6 +20,11 @@ Following transformation is done to text and created new col name transformed_te
 - 5 Stemming 
 - 6 two List is created named Spam corpus and ham corpus which contains spam and ham  words.
 - 7 Visualized  most common Ham and spam 30 words with bar plot and counter,
-- 8 Text is Vectorized using Bag of Words.
+
 ## Model Building
+- transformed_text is vectorized by TF-Idf.
+- GaussianNB,MultinomialNB,BernoulliNB are applied to transformed_text while target variable contains 0 or 1.
+- GaussianNB : accuracy- 0.86 precision- 0.45, MultinomialNB: accuracy- 0.97 precision- 0.98 , BernoulliNB: accuracy- 0.97 precision- 0.97
+- TF-Idf and MultinomialNB is selected because it gives high accuracy and high precision.
+
 
